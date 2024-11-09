@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  db:
+    image: "pgvector/pgvector:pg13"
+    ports:
+      - "15432:5432"
+    volumes:
+      - /mnt/data/docker-volume/postgres-pgvector:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=29297564-aef9-11ed-9dde-4439c4507abf
